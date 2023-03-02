@@ -8,11 +8,14 @@ class PercobaanSatu extends StatefulWidget {
 }
 
 class _PercobaanSatuState extends State<PercobaanSatu> {
-  int _counter = 0;
+  int _counter = 1;
 
   void _incrementCounter() {
     setState(() {
       _counter++;
+      if(_counter>10) {
+        _counter = 1;
+      }
     });
   }
 
@@ -26,6 +29,10 @@ class _PercobaanSatuState extends State<PercobaanSatu> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const Text(
+              'Menambah kondisi if',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+            ),
             const Text(
               'You have pushed the button this many times:',
             ),
