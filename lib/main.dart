@@ -51,15 +51,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
             ),
-            // ElevatedButton(
-            //   child: const Text('Percobaan 2'),
-            //   onPressed: () {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(builder: (context) => const PercobaanDua()),
-            //     );
-            //   },
-            // ),
+            ElevatedButton(
+              child: const Text('Percobaan 2'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const PercobaanDua()),
+                );
+              },
+            ),
             // ElevatedButton(
             //   child: const Text('Percobaan 3'),
             //   onPressed: () {
