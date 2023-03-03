@@ -18,7 +18,7 @@ class _PercobaanDuaState extends State<PercobaanDua> {
         _counter = 1;
       }
 
-      if(_counter%2 == 10) {
+      if(_counter%2 == 0) {
         _text = "Genap";
       } else {
         _text = "Ganjil";
