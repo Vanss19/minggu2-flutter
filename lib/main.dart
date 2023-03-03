@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:minggu2_flutter/latihan.dart';
 import 'package:minggu2_flutter/percobaan1.dart';
 import 'package:minggu2_flutter/percobaan2.dart';
 import 'package:minggu2_flutter/percobaan3.dart';
+import 'package:minggu2_flutter/tugas.dart';
 
 void main() {
   runApp(const MyApp());
@@ -66,6 +68,24 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const PercobaanTiga()),
+                );
+              },
+            ),
+            ElevatedButton(
+              child: const Text('Latihan'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Latihan()),
+                );
+              },
+            ),
+            ElevatedButton(
+              child: const Text('Tugas'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Tugas()),
                 );
               },
             ),
